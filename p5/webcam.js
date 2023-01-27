@@ -11,7 +11,7 @@ function setup() {
 }
 
 function draw() {
-  background(255);
+  background(200);
   pixelateCameraImage();
   
 }
@@ -29,9 +29,9 @@ function pixelateCameraImage() {
       const darkness = (255 - capture.pixels[i * 4]) / 255;
       const sideLength = stepSize * darkness;
         
-      const r = getRandomColorValue();
-      const g = getRandomColorValue();
-      const b = getRandomColorValue();
+      const r = 75;
+      const g =75;
+      const b = 75;
         
       fill(r, g, b);
       square(x, y, sideLength);
