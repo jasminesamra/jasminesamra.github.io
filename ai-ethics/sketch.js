@@ -61,7 +61,15 @@ function draw() {
 
 function mousePressed() {
   if (contentIndex < contentIndexMax) {
-  contentIndex++;
+    contentIndex++;
+  } else {
+    contentIndex = 0;
+  }
+}
+
+function touchStarted() {
+  if (contentIndex < contentIndexMax) {
+    contentIndex++;
   } else {
     contentIndex = 0;
   }
@@ -121,4 +129,3 @@ function drawLines() {
     line(x2, y2, x3, y3);
   }
 }
-
