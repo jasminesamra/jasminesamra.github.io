@@ -92,7 +92,7 @@ function printTitle() {
 function printSubtitle() {
   stroke("#f0f0f0");
   fill("#f0f0f0");
-  strokeWeight(1);
+  noStroke();
   textSize(30);
   textAlign(CENTER, CENTER);
   text(content[contentIndex].subtitle, windowWidth / 2, windowHeight / 2 + 50);
